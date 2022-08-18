@@ -1,0 +1,319 @@
+*{scroll-behavior: smooth;
+	-moz-scroll-behavior: smooth;
+	padding: 0;margin: 0;box-sizing: border-box;font-family: sans-serif;}
+/*- ------Global Styles------- -*/
+
+a{
+	color: skyblue;
+	font-weight: bold;
+	text-decoration: none;
+	transition: .3s;
+}
+a:hover{
+	color: white;
+}
+ul{
+	list-style: none;
+}
+h2{
+	font-size: 5rem;
+}
+
+/*- ----x--Global Styles--x------ -*/
+
+/*- -------Navbar Menu------- -*/
+nav{
+	display: flex;
+	background: black;
+	padding: 20px 20px;
+	justify-content: space-between;
+	flex-wrap: wrap; 
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	top: 0;
+}
+nav .logo{
+	font-size: 30px; 
+	margin-left: -15%;
+}
+nav .logo a{
+	color: white;
+}
+nav ul{
+	display: flex;
+}
+nav ul li{
+	padding: 0 5px;
+}
+
+/*- ---x----Navbar Menu---x---- -*/
+
+/*- --------Main Banner------- -*/
+header{
+	background-image: url(../img/code-944504_1920.jpg);
+	height: 80vh;
+}
+header h2{
+	color: white;
+	font-size: 5rem;
+	text-align: center;
+	line-height: 80vh
+}
+/*- ---x----Main Banner---x--- -*/
+
+/*- --------Big Section------- -*/
+section{
+	display: flex;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+aside{
+	flex-basis: 20%;
+	padding: 20px;
+	background-color: gray;
+}
+aside a{
+	display: block;
+	padding: 20px 0;
+	border-bottom: 2px solid skyblue;
+}
+article{
+	flex-basis: 80%;
+	padding: 20px;
+}
+article .about-content{
+	text-align: justify;
+}
+article h2{
+	margin-bottom: 20px;
+}
+section .service-section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+section .service-section .service-box{
+	flex-basis: 25%;
+	display: flex;
+	flex-direction: column;
+
+}
+section .service-section .service-box .service-content{
+	margin: 10px 0;
+	text-align: justify;
+}
+section .service-section .service-box .service-button{
+	align-self: flex-start;
+	margin-top: auto;
+}
+section .service-section .service-box .service-button a{
+	display: block;
+	border: 2px solid transparent;
+	background-color: skyblue;
+	color: white;
+	padding: 5px 10px;
+}
+section .service-section .service-box .service-button a:hover{
+	border: 2px solid skyblue;
+	background-color: transparent;
+	color: skyblue;
+}
+section .service-section img{
+	width: 100%;
+
+}
+/*- ----x----Big Section---x---- -*/
+
+/*- --------Form Section------- -*/
+.contact-us{
+	background-color: gray;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact-us .contact-section{
+	flex-basis: 50%;
+}
+.contact-us .contact-section ul li{
+	padding-top: 20px;
+	color: white;
+	font-size: 1.2rem;
+}
+.contact-us .form-section{
+	flex-basis: 50%;
+}
+.form-section .form-input{
+	padding: 10px;
+	display: flex;
+}
+.form-section .form-input label{
+	width: 20%;
+	color: white;
+	font-weight: bold;
+}
+.form-section .form-input input,
+.form-section .form-input textarea{
+	width: 80%;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.form-section .form-input input{
+	height: 30px;
+}
+.form-section .form-input textarea{
+	height: 100px;
+	resize: none;
+	overflow: auto;
+}
+.form-section .form-input button{
+	display: block;
+	border: 2px solid transparent;
+	background-color: skyblue;
+	color: white;
+	margin-left: auto;
+	padding: 8px 16px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.form-section .form-input button:hover{
+	border: 2px solid skyblue;
+	background-color: transparent;
+	color: skyblue;
+}
+/*- ----x----Form Section---x---- -*/
+
+/*- --------footer Section------- -*/
+footer{
+	background-color: black;
+	color: white;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+}
+/*- --------footer Section------- -*/
+
+/*- --------Media Querys------- -*/
+
+@media screen And (max-width:850px) {
+section .service-section{
+	display: flex;
+	flex-direction: column;
+}
+section .service-section .service-box{
+	margin: auto;
+	margin-top: 20px;
+}
+aside{
+	flex-basis: 40%;
+}
+
+article{
+	flex-basis: 60%;
+}
+
+.contact-us h2{
+	font-size: 3rem;
+}
+
+.form-section .form-input label{
+	width: 30%;
+	color: white;
+	font-weight: bold;
+}
+.form-section .form-input input,
+.form-section .form-input textarea{
+	width: 70%;
+
+}
+
+.form-section .form-input button{
+	padding: 4px 8px;
+}
+
+}
+
+
+@media screen And (max-width:650px) {
+h2{
+	font-size:3rem;
+}
+header{
+	height:40vh;
+}
+header h2{
+	font-size: 2rem;
+	line-height: 40vh;
+}
+section{
+	display: flex;
+	flex-direction: column;
+}
+aside{
+	flex-basis: 80%;
+	order: 2;
+}
+
+article{
+	flex-basis: 80%;
+}
+.contact-us{
+	display: flex;
+	flex-direction: column;
+	
+}
+.contact-us .contact-section{
+	text-align: center;
+}
+.contact-us .form-section{
+	margin-top: 30px;
+}
+
+.form-section .form-input label{
+	width: 20%;
+	color: white;
+	font-weight: bold;
+}
+.form-section .form-input input,
+.form-section .form-input textarea{
+	width: 80%;
+
+}
+
+.form-section .form-input button{
+	padding: 4px 8px;
+}
+
+}
+
+
+@media screen And (max-width:450px) {
+nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+nav .logo{
+	margin-left: 0;
+	order: -1;
+}
+.form-section .form-input label{
+	width: 30%;
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+}
+.form-section .form-input input,
+.form-section .form-input textarea{
+	width: 70%;
+
+}
+
+.form-section .form-input button{
+	padding: 3px 6px;
+}
+}
+
+/*- --x------Media Querys----x--- -*/
